@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.weatherdemo"
+    namespace = "com.example.WeatherApp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.weatherdemo"
+        applicationId = "com.example.WeatherApp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -38,14 +38,14 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    implementation("com.airbnb.android:lottie:6.1.0")
+    implementation(libs.lottie)
 
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 
-    implementation ("com.intuit.sdp:sdp-android:1.1.0")
-    implementation ("com.intuit.ssp:ssp-android:1.1.0")
-    implementation ("com.airbnb.android:lottie:6.0.0")
+    implementation (libs.sdp.android)
+    implementation (libs.ssp.android)
+    implementation (libs.lottie.v600)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
